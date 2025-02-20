@@ -85,7 +85,7 @@ section {
 }
 
 .img img {
-    width: 200px; /* Adjust size as needed */
+    width: 200px; 
     height: auto;
     border-radius: 10px;
 }
