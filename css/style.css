@@ -2,9 +2,9 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(#3f3b3b, #c0c0c0);
+    background-image: linear-gradient(#333, #c0c0c0);
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     min-height: 100vh;
     align-items: center;
 }
@@ -37,12 +37,17 @@ nav > div {
 }
 
 .nav-links {
+    list-style: none;
     display: flex;
     gap: 15px;
     justify-content: flex-end;
     flex: 1;
+    padding: 0;
+    margin: 0;
 }
-
+.nav-links li {
+    display: inline;
+}
 .nav-links .link {
     color: white;
     text-decoration: none;
@@ -58,15 +63,18 @@ main {
     width: 90%;
     max-width: 1200px;
 }
-
+header{
+    margin: 1.5em auto;
+}
 main header img {
     width: 100%;
     height: auto;
     display: block;
     margin-top: 2em;
     border-radius: 25px;
-    box-shadow: 0 0 18px 8px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, #333 100%);
 }
+
 
 section {
     margin: 2em auto;
@@ -82,10 +90,38 @@ section {
     gap: 20px;
     background-color: #333;
     padding: 20px;
+    flex-wrap: wrap;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 10px;
+}
+
+
+.sec-header {
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    color: white;
+    margin-bottom: 10px;
 }
 
 .img img {
+    display: flex;
     width: 200px; 
+    height: auto;
+    border-radius: 10px;
+}
+.img2 img {
+    width: 205px; 
+    height: auto;
+    border-radius: 10px;
+}
+.img3 img {
+    width: 227px; 
     height: auto;
     border-radius: 10px;
 }
@@ -93,6 +129,9 @@ section {
 .passage {
     flex: 1;
     color: white;
+    text-align: center;
+    font-size: 2em;
+    flex: 1; 
 }
 
 .quote {
@@ -101,15 +140,27 @@ section {
     justify-content: center;
     align-items: center;
     padding: 2em;
-    background-color: #333;
-    margin: 2em auto;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0) 10%, #333 100%);
+    margin: 1.5em auto;
+    border-radius: 25px;
 }
 
 blockquote {
-    content: '"';
-    font-family: serif;
+    align-items: center;
+    font-family: arial;
     position: relative;
     font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    max-width: 60vw;
+}
+hr {
+    border: none;
+    height: 6px;
+    background-color: #333;
+    margin: 10px 0;
+    border-radius: 10px;
 }
 
 footer {
