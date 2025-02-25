@@ -15,7 +15,7 @@ nav {
     justify-content: center;
     align-items: center;
     background-color: #333;
-    padding: 15px 20px;
+    padding: 20px 20px;
 }
 
 nav > div {
@@ -83,7 +83,23 @@ section {
     border-radius: 25px;
 }
 
-.text-image {
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+b{
+    font-weight: bold;
+}
+/*.text-image {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #333;
+    padding: 20px;
+    flex-wrap: wrap;
+} */
+.even {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -92,7 +108,15 @@ section {
     padding: 20px;
     flex-wrap: wrap;
 }
-
+.odd {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #333;
+    padding: 20px;
+    flex-wrap: wrap;
+}
 .text-container {
     display: flex;
     flex-direction: column;
@@ -125,13 +149,19 @@ section {
     height: auto;
     border-radius: 10px;
 }
+.img4 img {
+    height: 300px;
+    width: auto;
+    border-radius: 10px;
+}
 
 .passage {
     flex: 1;
     color: white;
     text-align: center;
     font-size: 2em;
-    flex: 1; 
+    margin-left: 2em;
+    margin-right: 2em;
 }
 
 .quote {
@@ -143,6 +173,7 @@ section {
     background: linear-gradient(to top, rgba(0, 0, 0, 0) 10%, #333 100%);
     margin: 1.5em auto;
     border-radius: 25px;
+    margin-bottom: 5em;
 }
 
 blockquote {
