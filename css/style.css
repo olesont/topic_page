@@ -59,7 +59,7 @@ nav > div {
 .nav-links .link {
     color: white;
     text-decoration: none;
-    font-size: 19px;
+    font-size: 18px;
 }
 
 .nav-links .link:hover {
@@ -107,7 +107,7 @@ b{
     padding: 20px;
     flex-wrap: wrap;
 } */
-.even {
+.odd, .even {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -115,12 +115,9 @@ b{
     padding: 20px;
     flex-wrap: wrap;
 }
-.odd {
+.image-container {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
     gap: 20px;
-    padding: 20px;
     flex-wrap: wrap;
 }
 .text-container {
@@ -231,4 +228,73 @@ footer {
 
 .passage, .nav-links, blockquote, .cta-button {
     font-family: 'Lora', serif;
+}
+
+.odd .img img, .odd .img2 img {
+    width: 200px;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.even .img img, .even .img3 img {
+    width: auto;
+    height: 270px;
+    max-width: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+@media (max-width: 1024px) {
+    .odd, .even {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .text-container {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .image-container {
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        flex-wrap: nowrap;
+        margin: 0 auto;
+        gap: 10px;
+    }
+    
+    .img4 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .odd .img img, .odd .img2 img {
+        width: 180px;
+        height: 245px;
+        object-fit: cover; 
+        max-width: none; 
+        margin: 0px; 
+    }
+    
+    .even .img img, .even .img3 img {
+        width: 180px;
+        height: 245px;
+        object-fit: cover;
+        max-width: none; 
+        margin: 0px;
+    }
+    
+    .img4 img {
+        height: auto;
+        width: 100%;
+        max-width: 350px;
+        margin: 5px;
+    }
+    .odd, .even {
+        padding: 25px;
+}
 }
